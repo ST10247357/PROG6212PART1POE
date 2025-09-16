@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Views\Lecturer\" />
     <Folder Include="Views\AcademicManager\" />
-    <Folder Include="Views\ProjectCoordinator\" />
   </ItemGroup>
 
 </Project>
