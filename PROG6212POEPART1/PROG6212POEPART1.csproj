@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Views\Lecturer\" />
-    <Folder Include="Views\AcademicManager\" />
   </ItemGroup>
 
 </Project>
