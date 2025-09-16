@@ -1,8 +1,72 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<style>
+    .role-card {
+        background-color: #CCDBEE;
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        .role-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .role-card h5 {
+            font-weight: 600;
+            color: #343a40;
+        }
+</style>
+<div class="text-center mt-5">
+
+    <br />
+    <br />
+    <h1 class="display-4 text-primary mb-4">Welcome to the Contract Monthly Claim System</h1>
+    <p class="lead text-secondary mb-5">
+        Quickly submit and track claims, and manage approvals efficiently.
+    </p>
+
+    <div class="row justify-content-center">
+
+        <div class="col-6 col-md-3 mb-4">
+            <a asp-controller="Lecturer" asp-action="SubmitClaim" class="text-decoration-none">
+                <div class="role-card shadow-sm rounded-3 p-4">
+                    <i class="bi bi-person-fill text-primary mb-2" style="font-size: 3rem;"></i>
+                    <h5 class="mt-2">Lecturer</h5>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4">
+            <a asp-controller="ProjectCoordinator" asp-action="Dashboard" class="text-decoration-none">
+                <div class="role-card shadow-sm rounded-3 p-4">
+                    <i class="bi bi-person-badge-fill text-warning mb-2" style="font-size: 3rem;"></i>
+                    <h5 class="mt-2">Coordinator</h5>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-6 col-md-3 mb-4">
+            <a asp-controller="AcademicManager" asp-action="Dashboard" class="text-decoration-none">
+                <div class="role-card shadow-sm rounded-3 p-4">
+                    <i class="bi bi-person-check-fill text-info mb-2" style="font-size: 3rem;"></i>
+                    <h5 class="mt-2">Manager</h5>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4">
+            <a asp-controller="HR" asp-action="Dashboard" class="text-decoration-none">
+                <div class="role-card shadow-sm rounded-3 p-4">
+                    <i class="bi bi-cash-stack text-success mb-2" style="font-size: 3rem;"></i>
+                    <h5 class="mt-2">HR</h5>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
+
+
+
